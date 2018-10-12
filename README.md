@@ -1,12 +1,14 @@
-## One Dark Syntax theme
+## Mett's Dark Snek Syntax theme
 
-### This package is now a part of the [core Atom repository](https://github.com/atom/atom/tree/master/packages/one-dark-syntax), please direct all issues and pull requests there in the future!
+A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not used in the original.
+
+Intended for use with a dark ui theme.
+
+Non-python languages will still retain the base syntax highlighting from the 'One Dark' syntax theme.
+
 
 ![one-dark-syntax](https://user-images.githubusercontent.com/238929/40553597-5f741518-6000-11e8-9068-70dfc5008b54.png)
 
-> The font used in the screenshot is [Fira Mono](https://github.com/mozilla/Fira).
-
-There is also a matching [UI theme](https://atom.io/themes/one-dark-ui).
 
 ### Install
 
