@@ -1,7 +1,7 @@
 {
-  "name": "mett-dark-snek-syntax",
+  "name": "dark-snek-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not used in the original. Intended for use with a dark ui theme. Non-python languages will still retain the base syntax highlighting in the 'One Dark' syntax theme.",
   "keywords": [
     "syntax",
@@ -9,7 +9,7 @@
     "python"
     "dark"
   ],
-  "repository": "https://github.com/atom/mett-dark-snek-syntax",
+  "repository": "https://github.com/Mettpawwz/dark-snek-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

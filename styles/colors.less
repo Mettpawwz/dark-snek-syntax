@@ -10,21 +10,21 @@
 @fadegrey:    hsl(@syntax-hue, 10%, 40%); // comments
 
 // Colors -----------------------------------
-@cyan:        hsl(187,  47%,  55%);
-@lightblue:   hsl(207,  82%,  66%);
-@blue:        hsl(207,  62%,  45%);
-@darkpurple:  hsl(259,  37%,  60%);
-@darkblue:    hsl(259, 100%,  69%);
-@purple:      hsl(286,  60%,  67%);
-@green:       hsl( 95,  38%,  62%);
-@darkgreen:   hsl(121, 32%, 40%);
+@cyan:       hsl(187,  47%,  55%); // for built-ins
+@orange:     hsl( 29,  54%,  61%); // for numeric literals (and various other uses such as the curly braces in f-strings, superclasses in a class definition, etc.)
+@yellow:     hsl( 39,  67%,  69%); // for class and function/method defs
 
-@red1:        hsl(355,  65%,  65%); // nice red
-@red2:        hsl(  5,  48%,  51%); // jarring red
+@blue:       hsl(207,  62%,  45%); // for functions and methods
+@lightblue:  hsl(207,  82%,  66%); // for singletons (None, True, False)
 
-@orange1:     hsl( 29,  54%,  61%);
-@orange2:     hsl( 39,  67%,  69%);
+@purple:     hsl(286,  60%,  67%); // for flow control (and imports)
+@darkpurple: hsl(259,  37%,  60%); // for function and method arguments (except 'self' and 'cls'), and the assignment operator
 
+@green:      hsl( 95,  38%,  62%); // for strings
+@darkgreen:  hsl(121,  32%,  40%); // for logical operators and arithmetic operators
+
+@red1:       hsl(355,  65%,  65%); // nice red for 'self' and 'cls' variables
+@red2:       hsl(  5,  48%,  51%); // jarring red for Errors and comparison operators
 
 // Base colors -----------------------------------
 @syntax-fg:     @monochrome;
