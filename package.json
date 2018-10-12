@@ -5,8 +5,8 @@
   "description": "A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not used in the original. Intended for use with a dark ui theme. Non-python languages will still retain the base syntax highlighting in the 'One Dark' syntax theme.",
   "keywords": [
     "syntax",
-    "theme"
-    "python"
+    "theme",
+    "python",
     "dark"
   ],
   "repository": "https://github.com/Mettpawwz/dark-snek-syntax",
