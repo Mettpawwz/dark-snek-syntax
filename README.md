@@ -7,7 +7,7 @@ Intended for use with a dark ui theme.
 Non-python languages will still retain the base syntax highlighting from the 'One Dark' syntax theme.
 
 
-![one-dark-syntax](https://user-images.githubusercontent.com/238929/40553597-5f741518-6000-11e8-9068-70dfc5008b54.png)
+![dark-snek-syntax](MettDarkSnek.PNG)
 
 
 ### Install
