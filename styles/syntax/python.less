@@ -1,9 +1,740 @@
 .syntax--source.syntax--python {
-  .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
-    color: @hue-3;
-  }
 
-  .syntax--variable.syntax--parameter {
-    color: @hue-6;
-  }
+    // Comments ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--comment.syntax--line.syntax--number-sign.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--typehint.syntax--directive.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--typehint.syntax--ignore.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--typehint.syntax--punctuation.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--typehint.syntax--type.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--comment.syntax--typehint.syntax--variable.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Constants ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--constant.syntax--character.syntax--escape.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--character.syntax--escape.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--character.syntax--format.syntax--placeholder.syntax--other.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--character.syntax--set.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--character.syntax--unicode.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    .syntax--constant.syntax--language.syntax--python {
+        color: @lightblue;
+     }
+    //
+    // .syntax--constant.syntax--numeric.syntax--bin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--numeric.syntax--dec.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--numeric.syntax--float.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--numeric.syntax--hex.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--numeric.syntax--oct.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--numeric.syntax--python {
+    //     color: @blue;
+    //  }
+    //
+    // .syntax--constant.syntax--other.syntax--caps.syntax--python {
+    //     color: @lightblue;
+    //  }
+    //
+    // .syntax--constant.syntax--other.syntax--ellipsis.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--constant.syntax--other.syntax--set.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+
+    // Entities ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--entity.syntax--name.syntax--function.syntax--decorator.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--name.syntax--function.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--name.syntax--tag.syntax--backreference.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--backreference.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--group.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--name.syntax--type.syntax--class.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--entity.syntax--other.syntax--inherited-class.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Invalids ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        // Deprecateds
+
+    .syntax--invalid.syntax--deprecated.syntax--backtick.syntax--python {
+        color: @red2;
+     }
+
+    .syntax--invalid.syntax--deprecated.syntax--prefix.syntax--python {
+        color: @red2;
+     }
+
+    .syntax--invalid.syntax--deprecated.syntax--semicolon.syntax--python {
+        color: @red2;
+     }
+
+
+        // Illegals ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    .syntax--invalid.syntax--illegal.syntax--annotation.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--brace.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--dec.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--decorator.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--line.syntax--continuation.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--name.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--newline.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--operator.syntax--python {
+        color: @red2;
+    }
+
+    .syntax--invalid.syntax--illegal.syntax--prefix.syntax--python {
+        color: @red2;
+    }
+
+    // Keywords ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--keyword.syntax--codetag.syntax--notation.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // flow control operators (with, if, elif, else, return, raise)
+    .syntax--keyword.syntax--control.syntax--flow.syntax--python {
+        color: @purple;
+     }
+    //
+    // .syntax--keyword.syntax--control.syntax--import.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--illegal.syntax--name.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    //
+    .syntax--keyword.syntax--operator.syntax--arithmetic.syntax--python {
+        color: @darkgreen;
+     }
+
+    //
+    .syntax--keyword.syntax--operator.syntax--assignment.syntax--python {
+        color: @darkpurple;
+     }
+
+    //
+    // .syntax--keyword.syntax--operator.syntax--bitwise.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    //
+    .syntax--keyword.syntax--operator.syntax--comparison.syntax--python {
+        color: @red2;
+     }
+
+    //
+    // .syntax--keyword.syntax--operator.syntax--conditional.syntax--negative.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--conditional.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--disjunction.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+
+    // logical operators (not, and, or, in, not in)
+    .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+        color: @darkgreen;
+    }
+
+    //
+    // .syntax--keyword.syntax--operator.syntax--lookahead.syntax--negative.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--lookahead.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--negative.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--negation.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    .syntax--keyword.syntax--operator.syntax--python {
+        color: @darkpurple;
+     }
+    //
+    // .syntax--keyword.syntax--operator.syntax--quantifier.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--unpacking.syntax--arguments.syntax--python {
+    //     color: @darkpurple;
+    //  }
+    //
+    // .syntax--keyword.syntax--operator.syntax--unpacking.syntax--parameter.syntax--python {
+    //     color: @darkpurple;
+    //  }
+
+    // Meta ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--meta.syntax--backreference.syntax--named.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--backreference.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--character.syntax--set.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--class.syntax--inheritance.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--class.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--format.syntax--brace.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--format.syntax--percent.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--fstring.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    //
+    .syntax--meta.syntax--function-call.syntax--generic.syntax--python {
+        color: @blue;
+     }
+
+    // affects too much, certain properties and certain vars inside f-strings
+    // .syntax--meta.syntax--function-call.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--function.syntax--decorator.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--function.syntax--parameters.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // doesn't seem to do anything?
+    // .syntax--meta.syntax--function.syntax--python {
+    //     color: @orange2;
+    //  }
+
+    //
+    // .syntax--meta.syntax--item-access.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--lambda-function.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--named.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--meta.syntax--typehint.syntax--comment.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Punctuation ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--punctuation.syntax--character.syntax--set.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--character.syntax--set.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--comment.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--comment.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--arguments.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--arguments.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--comment.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--decorator.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--dict.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--dict.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--inheritance.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--inheritance.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--list.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--list.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--parameters.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--parameters.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--backreference.syntax--named.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--backreference.syntax--named.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--conditional.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--conditional.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--end.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--lookahead.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--lookahead.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--lookbehind.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--lookbehind.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--named.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--named.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--non-capturing.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--parenthesis.syntax--non-capturing.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--section.syntax--class.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    // ?
+    // .syntax--punctuation.syntax--section.syntax--function.syntax--begin.syntax--python {
+    //     color: @orange2;
+    //  }
+    //
+    // .syntax--punctuation.syntax--section.syntax--function.syntax--lambda.syntax--begin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--annotation.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--annotation.syntax--result.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--arguments.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--colon.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--continuation.syntax--line.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--dict.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--element.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--inheritance.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--parameters.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--period.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--punctuation.syntax--separator.syntax--slice.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Storage ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--storage.syntax--modifier.syntax--declaration.syntax--python {
+    //     color: @monochrome;
+    // }
+    //
+    // .syntax--storage.syntax--modifier.syntax--flag.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+
+    //
+    .syntax--storage.syntax--type.syntax--class.syntax--python {
+        color: @orange2;
+    }
+
+    //
+    // .syntax--storage.syntax--type.syntax--format.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--storage.syntax--type.syntax--function.syntax--async.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--storage.syntax--type.syntax--function.syntax--lambda.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // color of the actual 'def' keyword
+    .syntax--storage.syntax--type.syntax--function.syntax--python {
+        color: @orange2;
+    }
+
+    //
+    // .syntax--storage.syntax--type.syntax--imaginary.syntax--number.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--storage.syntax--type.syntax--number.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--storage.syntax--type.syntax--string.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // String ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--string.syntax--interpolated.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--binary.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--binary.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--docstring.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--docstring.syntax--raw.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--docstring.syntax--raw.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--docstring.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--raw.syntax--binary.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--raw.syntax--binary.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--raw.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--raw.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--quoted.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--regexp.syntax--quoted.syntax--multi.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--string.syntax--regexp.syntax--quoted.syntax--single.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Support ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // .syntax--support.syntax--function.syntax--builtin.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--function.syntax--magic.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--other.syntax--escape.syntax--special.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--other.syntax--match.syntax--any.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--other.syntax--match.syntax--begin.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--other.syntax--match.syntax--end.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--other.syntax--parenthesis.syntax--regexp {
+    //     color: @monochrome;
+    //  }
+
+    //
+    .syntax--support.syntax--type.syntax--exception.syntax--python {
+        color: @red2;
+     }
+
+    //
+    // .syntax--support.syntax--type.syntax--metaclass.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--type.syntax--python {
+    //     color: @monochrome;
+    //  }
+    //
+    // .syntax--support.syntax--variable.syntax--magic.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // Variables ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    // cls
+    .syntax--variable.syntax--language.syntax--special.syntax--cls.syntax--python {
+        color: @red1;
+    }
+
+    // self
+    .syntax--variable.syntax--language.syntax--special.syntax--self.syntax--python {
+        color: @red1;
+    }
+
+    //
+    // .syntax--variable.syntax--legacy.syntax--builtin.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // superclass name in class def
+    // .syntax--variable.syntax--parameter.syntax--class.syntax--python {
+    //     color: @monochrome; // orange2
+    //  }
+
+    // param names in func calls
+    // .syntax--variable.syntax--parameter.syntax--function-call.syntax--python {
+    //     color: @monochrome;
+    //  }
+
+    // param names in defs
+    .syntax--variable.syntax--parameter.syntax--function.syntax--language.syntax--python {
+        color: @darkblue; // darkpurple
+     }
+
+    // cls param in defs
+    .syntax--variable.syntax--parameter.syntax--function.syntax--language.syntax--special.syntax--cls.syntax--python {
+        color: @red1;
+     }
+
+     // self param in defs
+    .syntax--variable.syntax--parameter.syntax--function.syntax--language.syntax--special.syntax--self.syntax--python {
+        color: @red1;
+     }
+
 }
