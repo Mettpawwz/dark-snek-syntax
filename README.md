@@ -1,8 +1,8 @@
 ## Mett's Dark Snek Syntax theme
 
-A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not used in the original.
+A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not taken advantage of in the original.
 
-Intended for use with a dark ui theme.
+It blends in cleanly the 'One Dark' UI theme, but any dark ui theme should do.
 
 Non-python languages will still retain the base syntax highlighting from the 'One Dark' syntax theme.
 
