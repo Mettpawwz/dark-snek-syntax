@@ -12,4 +12,4 @@ Non-python languages will still retain the base syntax highlighting from the 'On
 
 ### Install
 
-This theme is installed by default with Atom and can be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.
+Until I can figure out why I keep getting errors when trying to publish it to the atom repository, this theme must be cloned from GitHub and manually installed. There are tutorials on how to do this elsewhere. It can then be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.
