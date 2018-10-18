@@ -2,14 +2,14 @@
 
 A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not taken advantage of in the original.
 
-It blends in cleanly the 'One Dark' UI theme, but any dark ui theme should do.
+It blends in cleanly with the 'One Dark' UI theme, but any dark ui theme should do.
 
 Non-python languages will still retain the base syntax highlighting from the 'One Dark' syntax theme.
 
 
-![dark-snek-syntax](MettDarkSnek.PNG)
+![dark-snek-syntax](https://github.com/Mettpawwz/dark-snek-syntax/blob/master/MettDarkSnek.PNG)
 
 
 ### Install
 
-Until I can figure out why I keep getting errors when trying to publish it to the atom repository, this theme must be cloned from GitHub and manually installed. There are tutorials on how to do this elsewhere. It can then be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.
+Search for it under __Install__ in the Atom settings menu. Make sure to look for __Themes__ and not __Packages__. It can then be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.
