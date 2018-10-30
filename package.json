@@ -1,7 +1,7 @@
 {
   "name": "dark-snek-syntax",
   "theme": "syntax",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A syntax highlighting theme for MagicPython based off One Dark.",
   "keywords": [
     "syntax",

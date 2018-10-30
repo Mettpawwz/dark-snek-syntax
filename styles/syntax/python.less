@@ -75,10 +75,12 @@
     // .syntax--constant.syntax--numeric.syntax--oct.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--constant.syntax--numeric.syntax--python {
-    //     color: @blue;
-    //  }
+
+    // numeric literals (int, float, etc.)
+    .syntax--constant.syntax--numeric.syntax--python {
+        color: @lightblue;
+     }
+
     //
     // .syntax--constant.syntax--other.syntax--caps.syntax--python {
     //     color: @lightblue;
@@ -113,10 +115,12 @@
     // .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--group.syntax--regexp {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--entity.syntax--name.syntax--type.syntax--class.syntax--python {
-    //     color: @monochrome;
-    //  }
+
+    // class name in class def
+    .syntax--entity.syntax--name.syntax--type.syntax--class.syntax--python {
+        color: @orange;
+     }
+
     //
     // .syntax--entity.syntax--other.syntax--inherited-class.syntax--python {
     //     color: @monochrome;
@@ -199,7 +203,7 @@
 
     //
     .syntax--keyword.syntax--operator.syntax--arithmetic.syntax--python {
-        color: @darkgreen;
+        color: @lightblue;
     }
 
     //
@@ -209,12 +213,12 @@
 
     // bitwise operators (&, |, ^, ~, <<, >>)
     .syntax--keyword.syntax--operator.syntax--bitwise.syntax--python {
-        color: @red1;
+        color: @darkgreen;
     }
 
-    //
+    // comparison operators (==, !=, >, <, >=, <=)
     .syntax--keyword.syntax--operator.syntax--comparison.syntax--python {
-        color: @red2;
+        color: @darkgreen;
     }
 
     //
@@ -289,10 +293,12 @@
     // .syntax--meta.syntax--class.syntax--inheritance.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--meta.syntax--class.syntax--python {
-    //     color: @monochrome;
-    //  }
+
+    // Unsure what it does, but leaving it orange for now
+    .syntax--meta.syntax--class.syntax--python {
+        color: @orange;
+     }
+
     //
     // .syntax--meta.syntax--format.syntax--brace.syntax--python {
     //     color: @monochrome;
@@ -551,7 +557,7 @@
     //     color: @monochrome;
     //  }
 
-    //
+    // class keyword color
     .syntax--storage.syntax--type.syntax--class.syntax--python {
         color: @yellow;
     }
@@ -679,7 +685,7 @@
     //     color: @monochrome;
     //  }
 
-    //
+    // jarring red for exceptions
     .syntax--support.syntax--type.syntax--exception.syntax--python {
         color: @red2;
     }
