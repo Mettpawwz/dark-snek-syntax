@@ -10,21 +10,21 @@
 @fadegrey:    hsl(@syntax-hue, 10%, 40%); // comments
 
 // Colors -----------------------------------
-@cyan:       hsl(175,  47%,  45%); // for built-ins, magic methods, etc.
-@orange:     hsl( 29,  54%,  61%); // Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, etc.)
-@yellow:     hsl( 39,  67%,  69%); // for class and function/method defs
+@teal:        hsl(175,  47%,  45%);  // for built-ins, magic methods, types etc.
+@orange:      hsl( 29,  54%,  61%);  // Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, the ellipsis, etc.)
+@yellow:      hsl( 39,  67%,  69%);  // for 'class', 'def', and 'lambda' keywords
 
-@blue:       hsl(207,  62%,  45%); // for functions and method names in defs, as well as in calls
-@lightblue:  hsl(207,  88%,  75%); // for singletons (None, True, False), numeric literals, and, arithmetic operators
+@lightblue:   hsl(207,  88%,  75%);  // for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, *, /, //, %, etc.)
+@darkblue:    hsl(207,  62%,  45%);  // for functions and method names in defs, as well as in calls
 
-@purple:     hsl(286,  60%,  67%); // for flow control (and imports)
-@darkpurple: hsl(259,  37%,  60%); // for function and method arguments (except those highlighted especially as @red1), and all assignment operators
+@lightpurple: hsl(286,  60%,  67%);  // for flow control (for, while, if, else, try, except, finally, with, raise), and imports
+@darkpurple:  hsl(259,  37%,  60%);  // for function and method arguments (except those highlighted especially as lightred), and all assignment operators (=, +=, etc.)
 
-@green:      hsl( 95,  38%,  62%); // for strings
-@darkgreen:  hsl(121,  32%,  40%); // for logical operators and comparison operators
+@lightgreen:  hsl( 95,  38%,  62%);  // for strings
+@darkgreen:   hsl(121,  32%,  40%);  // for logical operators (and, or, not, in), comparison operators (==, !=, >, <, etc.) and bitwise operators (&, |, ~, etc.). Basically anything that resolves to True or False.
 
-@red1:       hsl(355,  65%,  65%); // nice red for important non-reserved variable names like 'self', 'cls', 'file', '__name__', etc.
-@red2:       hsl(  5,  48%,  51%); // jarring red for Errors
+@lightred:    hsl(355,  65%,  65%);  // nice red for important non-keyword variable names like 'self', 'cls', etc.
+@darkred:     hsl(  5,  48%,  51%);  // jarring red for errors
 
 // Base colors -----------------------------------
 @syntax-fg:     @monochrome;

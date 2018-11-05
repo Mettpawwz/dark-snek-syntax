@@ -15,21 +15,22 @@ Non-python languages will still retain the base syntax highlighting from the 'On
 Search for it under __Install__ in the Atom settings menu. Make sure to look for __Themes__ and not __Packages__. It can then be activated by going to the __Settings > Themes__ section and selecting it from the __Syntax Themes__ drop-down menu.
 
 ### Colors
-
-teal        - for built-ins, magic methods, etc.
-orange      - Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, etc.)
+<pre>
+teal        - for built-ins, magic methods, types etc.
+orange      - Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, the ellipsis, etc.)
 yellow      - for 'class', 'def', and 'lambda' keywords
 
 darkblue    - for functions and method names in defs, as well as in calls
-lightblue   - for singletons (None, True, False), numeric literals, and arithmetic operators
+lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, \*, /, //, %, etc.)
 
-lightpurple - for flow control (and imports)
-darkpurple  - for function and method arguments (except those highlighted especially as lightred), and all assignment operators
+lightpurple - for flow control (for, while, if, else, try, except, finally, with, raise), and imports
+darkpurple  - for function and method arguments (except those highlighted especially as lightred), and all assignment operators (=, +=, \*=, etc.)
 
 lightgreen  - for strings
-darkgreen   - for logical operators and comparison operators
+darkgreen   - for logical operators (and, or, not, in), comparison operators (==, !=, >, <, etc.) and bitwise operators (&, |, ~, etc.). Basically anything that resolves to True or False.
 
-lightred    - nice red for important non-keyword variable names like 'self', 'cls', 'file', '__name__', etc.
-darkred     - jarring red for Errors
+lightred    - nice red for important non-keyword variable names like 'self', 'cls', etc.
+darkred     - jarring red for errors
+</pre>
 
 Everything else is unchanged from the One Dark theme.
