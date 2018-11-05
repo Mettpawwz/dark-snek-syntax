@@ -21,10 +21,10 @@ orange      - Class name color in class def and various misc uses (such as the c
 yellow      - for 'class', 'def', and 'lambda' keywords
 
 darkblue    - for functions and method names in defs, as well as in calls
-lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, \*, /, //, %, etc.)
+lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, *, /, //, %, etc.)
 
 lightpurple - for flow control (for, while, if, else, try, except, finally, with, raise), and imports
-darkpurple  - for function and method arguments (except those highlighted especially as lightred), and all assignment operators (=, +=, \*=, etc.)
+darkpurple  - for function and method arguments (except those highlighted especially as lightred), and all assignment operators (=, +=, etc.)
 
 lightgreen  - for strings
 darkgreen   - for logical operators (and, or, not, in), comparison operators (==, !=, >, <, etc.) and bitwise operators (&, |, ~, etc.). Basically anything that resolves to True or False.
