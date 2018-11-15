@@ -35,26 +35,32 @@
     // .syntax--constant.syntax--character.syntax--escape.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--constant.syntax--character.syntax--escape.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! Color of the escape character '/' and whatever immediately follows it
+    .syntax--constant.syntax--character.syntax--escape.syntax--regexp {
+        color: @lightblue;
+     }
+
     //
     // .syntax--constant.syntax--character.syntax--format.syntax--placeholder.syntax--other.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--constant.syntax--character.syntax--set.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! The contents of character sets (anything inside square brackets)
+    .syntax--constant.syntax--character.syntax--set.syntax--regexp {
+        color: @darkblue;
+     }
+
     //
     // .syntax--constant.syntax--character.syntax--unicode.syntax--regexp {
     //     color: @monochrome;
     //  }
-    //
+
+    // Singletons like None, True, False?
     .syntax--constant.syntax--language.syntax--python {
         color: @lightblue;
     }
+
     //
     // .syntax--constant.syntax--numeric.syntax--bin.syntax--python {
     //     color: @monochrome;
@@ -83,13 +89,14 @@
 
     //
     // .syntax--constant.syntax--other.syntax--caps.syntax--python {
-    //     color: @lightblue;
+    //     color: @monochrome;
     //  }
     //
     // .syntax--constant.syntax--other.syntax--ellipsis.syntax--python {
     //     color: @monochrome;
     //  }
-    //
+
+    // seems to affect the square brackets in a character group, but isn't necessary as it is handled elsewhere
     // .syntax--constant.syntax--other.syntax--set.syntax--regexp {
     //     color: @monochrome;
     //  }
@@ -103,18 +110,21 @@
     // .syntax--entity.syntax--name.syntax--function.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--entity.syntax--name.syntax--tag.syntax--backreference.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--backreference.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--group.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! named backreferences (such as '(?P=name)')
+    .syntax--entity.syntax--name.syntax--tag.syntax--backreference.syntax--regexp {
+        color: @darkpurple;
+     }
+
+    // !!!REGEX!!! backreferences like '\1'
+    .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--backreference.syntax--regexp {
+        color: @darkpurple;
+     }
+
+    // !!!REGEX!!! name of a named group (e.g. (?P<name>))
+    .syntax--entity.syntax--name.syntax--tag.syntax--named.syntax--group.syntax--regexp {
+        color: @orange;
+     }
 
     // class name in class def
     .syntax--entity.syntax--name.syntax--type.syntax--class.syntax--python {
@@ -234,39 +244,46 @@
     //     color: @monochrome;
     //  }
 
-    // logical operators (not, and, or, in, not in)
+    // logical operators (not, and, or, in, is)
     .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
         color: @darkgreen;
     }
 
-    //
-    // .syntax--keyword.syntax--operator.syntax--lookahead.syntax--negative.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--keyword.syntax--operator.syntax--lookahead.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--negative.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--keyword.syntax--operator.syntax--negation.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
+    // !!!REGEX!!! negative Lookahead operator (?!)
+    .syntax--keyword.syntax--operator.syntax--lookahead.syntax--negative.syntax--regexp {
+        color: @lightred;
+     }
+
+    // !!!REGEX!!! Lookahead operator (?=)
+    .syntax--keyword.syntax--operator.syntax--lookahead.syntax--regexp {
+        color: @lightgreen;
+     }
+
+    // !!!REGEX!!! negative Lookbehind operator (?<!)
+    .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--negative.syntax--regexp {
+        color: @lightred;
+     }
+
+    // !!!REGEX!!! Lookbehind operator (?<=)
+    .syntax--keyword.syntax--operator.syntax--lookbehind.syntax--regexp {
+        color: @lightgreen;
+     }
+
+    // !!!REGEX!!! The negation operator '^', when used at the start of a group (in square brackets)
+    .syntax--keyword.syntax--operator.syntax--negation.syntax--regexp {
+        color: @darkred;
+     }
+
+    // Any operators not caught by other colours?
     .syntax--keyword.syntax--operator.syntax--python {
         color: @darkpurple;
     }
-    //
-    // .syntax--keyword.syntax--operator.syntax--quantifier.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! Quantifiers such as '*', '+', '?', '{1,3}', etc.
+    .syntax--keyword.syntax--operator.syntax--quantifier.syntax--regexp {
+        color: @darkgreen;
+     }
+
     //
     // .syntax--keyword.syntax--operator.syntax--unpacking.syntax--arguments.syntax--python {
     //     color: @darkpurple;
@@ -278,17 +295,21 @@
 
     // Meta ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+    // named backreferences (such as '(?P=name)') (Doesn't seem to work)
     // .syntax--meta.syntax--backreference.syntax--named.syntax--regexp {
-    //     color: @monochrome;
+    //     color: @darkpurple;
     //  }
     //
+    // backreferences like '\1' (Doesn't seem to work)
     // .syntax--meta.syntax--backreference.syntax--regexp {
-    //     color: @monochrome;
+    //     color: @darkpurple;
     //  }
-    //
-    // .syntax--meta.syntax--character.syntax--set.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! The actual square brackets themselves in a character set (not the contents)
+    .syntax--meta.syntax--character.syntax--set.syntax--regexp {
+        color: @darkblue;
+     }
+
     //
     // .syntax--meta.syntax--class.syntax--inheritance.syntax--python {
     //     color: @monochrome;
@@ -312,7 +333,7 @@
     //     color: @monochrome;
     //  }
 
-    //
+    // colour of a function or method in when being called
     .syntax--meta.syntax--function-call.syntax--generic.syntax--python {
         color: @darkblue;
     }
@@ -328,12 +349,12 @@
 
     // no idea what this does
     // .syntax--meta.syntax--function.syntax--parameters.syntax--python {
-    //     color: @darkpurple;
+    //     color: @monochrome;
     //  }
 
     // doesn't seem to do anything?
     // .syntax--meta.syntax--function.syntax--python {
-    //     color: @yellow;
+    //     color: @monochrome;
     //  }
 
     //
@@ -344,10 +365,12 @@
     // .syntax--meta.syntax--lambda-function.syntax--python {
     //     color: @monochrome;
     //  }
-    //
+
+    // Doesn't seem to do anything
     // .syntax--meta.syntax--named.syntax--regexp {
     //     color: @monochrome;
     //  }
+
     //
     // .syntax--meta.syntax--typehint.syntax--comment.syntax--python {
     //     color: @monochrome;
@@ -355,10 +378,11 @@
 
     // Punctuation ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+    // doesn't seem to do anything
     // .syntax--punctuation.syntax--character.syntax--set.syntax--begin.syntax--regexp {
     //     color: @monochrome;
     //  }
-    //
+    // doesn't seem to do anything
     // .syntax--punctuation.syntax--character.syntax--set.syntax--end.syntax--regexp {
     //     color: @monochrome;
     //  }
@@ -438,10 +462,12 @@
     // .syntax--punctuation.syntax--parenthesis.syntax--begin.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--punctuation.syntax--parenthesis.syntax--begin.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! change color of the opening bracket of regex groups (the ones with round brackets, not character sets with square brackets!)
+    .syntax--punctuation.syntax--parenthesis.syntax--begin.syntax--regexp {
+        color: @darkpurple;
+     }
+
     //
     // .syntax--punctuation.syntax--parenthesis.syntax--conditional.syntax--begin.syntax--regexp {
     //     color: @monochrome;
@@ -454,10 +480,12 @@
     // .syntax--punctuation.syntax--parenthesis.syntax--end.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--punctuation.syntax--parenthesis.syntax--end.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! change color of the closing bracket of regex groups (the ones with round brackets, not character sets with square brackets!)
+    .syntax--punctuation.syntax--parenthesis.syntax--end.syntax--regexp {
+        color: @darkpurple;
+     }
+
     //
     // .syntax--punctuation.syntax--parenthesis.syntax--lookahead.syntax--begin.syntax--regexp {
     //     color: @monochrome;
@@ -664,28 +692,33 @@
     // .syntax--support.syntax--function.syntax--magic.syntax--python {
     //     color: @monochrome;
     //  }
-    //
-    // .syntax--support.syntax--other.syntax--escape.syntax--special.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--support.syntax--other.syntax--match.syntax--any.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--support.syntax--other.syntax--match.syntax--begin.syntax--regexp {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--support.syntax--other.syntax--match.syntax--end.syntax--regexp {
-    //     color: @monochrome;
-    //  }
+
+    // !!!REGEX!!! Escaped characters representing special character sets (such as \d, \D, \w, \W, etc.)
+    .syntax--support.syntax--other.syntax--escape.syntax--special.syntax--regexp {
+        color: @lightpurple;
+     }
+
+    // !!!REGEX!!! The '.' (dot) operator, which matches anything
+    .syntax--support.syntax--other.syntax--match.syntax--any.syntax--regexp {
+        color: @yellow;
+     }
+
+    // !!!REGEX!!! The '^' operator, which matches the start of a string
+    .syntax--support.syntax--other.syntax--match.syntax--begin.syntax--regexp {
+        color: @yellow;
+     }
+
+     // !!!REGEX!!! The '$' operator, which matches the end of a string
+    .syntax--support.syntax--other.syntax--match.syntax--end.syntax--regexp {
+        color: @yellow;
+     }
+
     //
     // .syntax--support.syntax--other.syntax--parenthesis.syntax--regexp {
     //     color: @monochrome;
     //  }
 
-    // jarring red for exceptions
+    // for exceptions
     .syntax--support.syntax--type.syntax--exception.syntax--python {
         color: @darkred;
     }

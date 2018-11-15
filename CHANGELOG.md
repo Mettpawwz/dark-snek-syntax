@@ -7,3 +7,6 @@
 
 ## 2.1.1 - Readme Mini-Update
 * Changed the readme to reflect the changes in the 2.1.0 update
+
+## 2.2.0 - Regex Support Update
+* Redid the regex syntax highlighting from the ground up
