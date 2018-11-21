@@ -20,8 +20,8 @@ Search for it under __Install__ in the Atom settings menu. Make sure to look for
     orange      - Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, the ellipsis, etc.)
     yellow      - for 'class', 'def', and 'lambda' keywords
     
-    darkblue    - for functions and method names in defs, as well as in calls
     lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, *, /, //, %, etc.)
+    darkblue    - for functions and method names in defs, as well as in calls
     
     lightpurple - for flow control (for, while, if, else, try, except, finally, with, raise), and imports
     darkpurple  - for function and method arguments (except those highlighted especially as lightred), and all assignment operators (=, +=, etc.)
