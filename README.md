@@ -38,12 +38,12 @@ I've also redone the regex syntax (available for strings that are preceded by a 
 
     teal        - for normal characters that match themselves
     orange      - for named group assignments (e.g. '(?P<SomeName>SomeRegex)')
-    yellow      - for the start-of-string ('^') and end-of-sring ('^') anchors and the match-anything operator ('.')
+    yellow      - for the start-of-string ('^') and end-of-sring ('$') anchors
     
     darkblue    - for character groups (e.g. '[abc]', '[A-Za-z0-1]')
     lightblue   - for ordinary escaped sequences with no special meaning (e.g. '\(', '\.')
     
-    lightpurple - for special escaped characters (e.g. '\d', '\w')
+    lightpurple - for special escaped characters representing character groups (e.g. '\d', '\w') and the match-anything operator ('.')
     darkpurple  - for the opening and closing parentheses of capture groups as well as backreferences to previous capture groups (e.g. '\1', '(?P=SomeName)')
     
     lightgreen  - for forward-references ('(?=SomeRegex)') and back-references ('(?<=SomeRegex)')
