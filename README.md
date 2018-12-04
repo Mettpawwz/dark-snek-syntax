@@ -1,4 +1,4 @@
-## Mett's Dark Snek Syntax theme
+## Dark Snek Syntax theme
 
 A syntax highlighting theme for MagicPython based off 'One Dark' with lots of tweaks to the existing colors and several Python-specific syntax highlighting features not taken advantage of in the original.
 
