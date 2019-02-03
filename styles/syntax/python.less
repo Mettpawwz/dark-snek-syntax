@@ -284,11 +284,11 @@
         color: @darkgreen;
      }
 
-    //
+    // no idea
     // .syntax--keyword.syntax--operator.syntax--unpacking.syntax--arguments.syntax--python {
     //     color: @darkpurple;
     //  }
-    //
+    // no idea
     // .syntax--keyword.syntax--operator.syntax--unpacking.syntax--parameter.syntax--python {
     //     color: @darkpurple;
     //  }
@@ -347,7 +347,7 @@
     //     color: @monochrome;
     //  }
 
-    // no idea what this does
+    // affects the commas, typehints, and probably default variables used inside function defs
     // .syntax--meta.syntax--function.syntax--parameters.syntax--python {
     //     color: @monochrome;
     //  }
@@ -357,7 +357,7 @@
     //     color: @monochrome;
     //  }
 
-    //
+    // item access and indexing
     // .syntax--meta.syntax--item-access.syntax--python {
     //     color: @monochrome;
     //  }
@@ -685,13 +685,15 @@
 
     // Support ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    // .syntax--support.syntax--function.syntax--builtin.syntax--python {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--support.syntax--function.syntax--magic.syntax--python {
-    //     color: @monochrome;
-    //  }
+    // builtin functions like 'any', 'all', 'len' etc.
+    .syntax--support.syntax--function.syntax--builtin.syntax--python {
+        color: @teal;
+     }
+
+    // magic methods like '__init__', '__call__', '__iter__', etc.
+    .syntax--support.syntax--function.syntax--magic.syntax--python {
+        color: @teal;
+     }
 
     // !!!REGEX!!! Escaped characters representing special character sets (such as \d, \D, \w, \W, etc.)
     .syntax--support.syntax--other.syntax--escape.syntax--special.syntax--regexp {
@@ -713,7 +715,7 @@
         color: @yellow;
      }
 
-    //
+    // no idea
     // .syntax--support.syntax--other.syntax--parenthesis.syntax--regexp {
     //     color: @monochrome;
     //  }
@@ -723,18 +725,20 @@
         color: @darkred;
     }
 
-    //
+    // 'metaclass' keyword argument in a class definition
     // .syntax--support.syntax--type.syntax--metaclass.syntax--python {
-    //     color: @monochrome;
+    //     color: @darkpurple;
     //  }
-    //
-    // .syntax--support.syntax--type.syntax--python {
-    //     color: @monochrome;
-    //  }
-    //
-    // .syntax--support.syntax--variable.syntax--magic.syntax--python {
-    //     color: @monochrome;
-    //  }
+
+    // builtin types like 'str', 'int', 'bool' etc.
+    .syntax--support.syntax--type.syntax--python {
+        color: @teal;
+     }
+
+    // magic variables like '__future__', '__name__', '__file__', etc.
+    .syntax--support.syntax--variable.syntax--magic.syntax--python {
+        color: @teal;
+     }
 
     // Variables ------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -749,13 +753,13 @@
     }
 
     //
-    // .syntax--variable.syntax--legacy.syntax--builtin.syntax--python {
-    //     color: @monochrome;
-    //  }
+    .syntax--variable.syntax--legacy.syntax--builtin.syntax--python {
+        color: @monochrome;
+     }
 
     // superclass name in class def
     // .syntax--variable.syntax--parameter.syntax--class.syntax--python {
-    //     color: @monochrome; // orange2
+    //     color: @monochrome;
     //  }
 
     // param names in func calls
