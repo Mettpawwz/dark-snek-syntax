@@ -27,3 +27,7 @@
 * Made deprecated builtins (such as 'file') no longer receive any syntax highlighting.
 * Changed magic variables such as module-level dunders from lightred to teal.
 * Uploaded a new image to reflect the changes since the last one was uploaded.
+
+# 2.2.6 - Minor color change
+* Changed inherited classes to the same color as classes themselves (orange) in the class declaration statement
+* Uploaded a new image.
