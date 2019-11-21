@@ -20,7 +20,7 @@ Search for it under __Install__ in the Atom settings menu. Make sure to look for
     orange      - Class name color in class def and various misc uses (such as the curly braces in f-strings, constants, the ellipsis, etc.)
     yellow      - for 'class', 'def', and 'lambda' keywords
 
-    lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, *, /, //, %, etc.)
+    lightblue   - for singletons (None, True, False), numeric literals (1, 1.5, 2e3, etc.), and, arithmetic operators (+, -, \*, /, //, %, etc.)
     darkblue    - for functions and method names in defs, as well as in calls
 
     lightpurple - for flow control (for, while, if, else, try, except, finally, with, raise), and imports
@@ -47,7 +47,7 @@ I've also redone the regex syntax (available for strings that are preceded by a 
     darkpurple  - for the opening and closing parentheses of capture groups as well as backreferences to previous capture groups (e.g. '\1', '(?P=SomeName)')
 
     lightgreen  - for lookaheads ('(?=SomeRegex)') and lookbehinds ('(?<=SomeRegex)')
-    darkgreen   - for quantifiers (e.g. '*', '+', '?', '{1,3}', etc.)
+    darkgreen   - for quantifiers (e.g. '\*', '+', '?', '{1,3}', etc.)
 
     lightred    - for negated lookaheads ('(?!SomeRegex)') and negated lookbehinds ('(?<!SomeRegex)')
     darkred     - for the negation operator ('^') in a character group (e.g. '[^abc]')
